@@ -1,0 +1,50 @@
+{
+  "name": "@alice-lilith/tapestry",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Shared React components, theme tokens, and Tauri helpers for the alice-lilith desktop apps",
+  "files": [
+    "src"
+  ],
+  "type": "module",
+  "sideEffects": [
+    "*.css"
+  ],
+  "exports": {
+    ".": "./src/index.ts",
+    "./tauri": "./src/tauri/index.ts",
+    "./styles.css": "./src/styles/index.css"
+  },
+  "devDependencies": {
+    "@tauri-apps/api": "^2",
+    "@tauri-apps/plugin-fs": "^2.5.1",
+    "@testing-library/jest-dom": "^6.9.1",
+    "@testing-library/react": "^16.3.2",
+    "@testing-library/user-event": "^14.6.1",
+    "@types/react": "^19.1.8",
+    "@types/react-dom": "^19.1.6",
+    "@vitejs/plugin-react": "^4.6.0",
+    "jsdom": "^29.1.1",
+    "oxfmt": "0.53.0",
+    "oxlint": "1.68.0",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "react-router": "7.16.0",
+    "typescript": "~6.0.3",
+    "vite": "^7.0.4",
+    "vitest": "4.1.8",
+    "yaml": "^2.9.0"
+  },
+  "peerDependencies": {
+    "@tauri-apps/api": "^2",
+    "@tauri-apps/plugin-fs": "^2.5.1",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "react-router": "^7.16.0",
+    "yaml": "^2.9.0"
+  },
+  "volta": {
+    "node": "24.16.0",
+    "pnpm": "11.5.1"
+  }
+}
